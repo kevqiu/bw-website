@@ -1,0 +1,22 @@
+.sidebar-fixed {
+  position: fixed;
+  top: 100px;
+}
+
+#sidebar-title {
+  margin-bottom: 25px;
+}
+
+#sidebar-list {
+  padding: 0;
+  list-style: none;
+  line-height: 1.1em;
+}
+
+#sidebar-list a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8em;
+  letter-spacing: -0px;
+}
