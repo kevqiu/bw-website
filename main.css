@@ -1,0 +1,14 @@
+#main-container {
+  padding-top: 80px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#sidebar-list {
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar-list a {
+  color: black;
+}
