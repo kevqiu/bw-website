@@ -3,11 +3,22 @@
   top: 20px;
 }
 
-#sidebar-title {
-  margin-bottom: 25px;
+.sidebar-title {
+  position: relative;
   font-weight: 600;
   letter-spacing: -0.05em;
   text-transform: uppercase;
+  word-wrap: normal;
+  white-space: normal;
+}
+
+#sidebar-first {
+  margin-bottom: 0px;
+}
+
+#sidebar-last {
+  margin-top: 0px;
+  margin-bottom: 25px;
 }
 
 #sidebar-list {
