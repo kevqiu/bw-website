@@ -1,9 +1,16 @@
 #main-container {
-  padding-top: 80px;
-  width: 75%;
+  padding-top: 10px;
+  width: 60%;
   margin: 0 auto;
 }
 
 #display-section {
-  margin-left: 1%;
+  margin-left: 6%;
+}
+
+#display-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
 }

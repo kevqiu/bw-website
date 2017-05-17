@@ -5,31 +5,48 @@
 		<title>Sample Webiste</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
 	</head>
 
 	<body>
+		<nav class="navbar navbar-inverse navbar-fixed-top visible-xs-block">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">WebSiteName</a>
+		    </div>
+		    <ul class="nav navbar-nav">
+		      <!-- <li class="active"><a href="#">Home</a></li> -->
+		      <!-- <li><a href="#">Page 1</a></li>
+		      <li><a href="#">Page 2</a></li>
+		      <li><a href="#">Page 3</a></li> -->
+		    </ul>
+		  </div>
+		</nav>
+
 		<div id="main-container">
 			<div id="container">
 				<div class="row">
-					<div class="col-sm-2">
-		        <div class="sidebar-module sidebar-module-inset sidebar-fixed">
-							<h4 id="sidebar-title">FIRST LAST</h4>
+					<div class="hidden-xs col-sm-2">
+		        <div class="sidebar-module sidebar-module-inset sidebar-fixed hidden-xs">
+							<h3 id="sidebar-title">First Last</h4>
 							<ul id="sidebar-list">
-								<li><a href="">ABOUT</a></li>
-								<li><a href="">TEST1</a></li>
-								<li><a href="">TEST2</a></li>
-								<li><a href="">TEST3</a></li>
-								<li><a href="">CONTACT</a></li>
+								<li><a href="">About</a></li>
+								<li><a href="">Test 1</a></li>
+								<li><a href="">Test 2</a></li>
+								<li><a href="">Test 3</a></li>
+								<br>
+								<li><a href="">Contact</a></li>
 							</ul>
 						</div>
 					</div> <!-- sidebar -->
 
-	        <div class="col-sm-8" id="display-section">
+	        <div class="col-xs-12 col-sm-9" id="display-section">
 	          <div>
-	            <h2>Sample blog post</h2>
+	            <h2 id="display-title">About</h2>
 	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam ligula, aliquam fringilla egestas ut, rutrum ut mi. Suspendisse quis nunc luctus, euismod eros id, rutrum est. Fusce egestas congue orci, nec cursus turpis euismod nec. Mauris lacinia ultrices elit in hendrerit. Praesent eleifend leo sit amet lectus laoreet, vitae faucibus odio euismod. Nulla diam erat, rutrum aliquet posuere eu, finibus nec magna. Cras eget lectus pharetra, sodales sem in, aliquam risus. Nunc euismod quis ante ac dictum. Maecenas commodo, nulla consectetur sodales auctor, turpis lacus consequat nibh, ut pellentesque tellus nunc sed ante.
 
 Mauris dolor tortor, molestie sed elit vel, scelerisque blandit sapien. Etiam consectetur, massa in vehicula dignissim, sapien felis posuere quam, id feugiat risus nunc vehicula dui. Integer dignissim, est sed hendrerit placerat, urna lectus mollis leo, posuere lobortis nunc nisi lacinia turpis. Pellentesque aliquam dictum laoreet. Fusce vehicula venenatis justo, eu egestas arcu tincidunt sollicitudin. Integer metus nisi, convallis in massa eu, aliquet ultricies magna. Nulla facilisi.
