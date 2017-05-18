@@ -10,6 +10,7 @@
   text-transform: uppercase;
   word-wrap: normal;
   white-space: normal;
+  cursor: pointer;
 }
 
 #sidebar-first {
@@ -34,4 +35,5 @@
   letter-spacing: -0.01em;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }

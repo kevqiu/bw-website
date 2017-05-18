@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/navigo.min.js"></script>
+		<script src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
 	</head>
@@ -32,56 +35,24 @@
 				<div class="row">
 					<div class="hidden-xs col-sm-3 col-md-2 col-md-offset-1">
 		        <div class="sidebar-module sidebar-module-inset sidebar-fixed">
-							<h2 class="sidebar-title" id="sidebar-first">First</h2>
-							<h2 class="sidebar-title" id="sidebar-last">LAST</h2>
+							<h2 href="/" class="sidebar-title redirect-link" id="sidebar-first">First</h2>
+							<h2 href="/" class="sidebar-title redirect-link" id="sidebar-last">LAST</h2>
 							<ul id="sidebar-list">
-								<li><a href="">About</a></li>
-								<li><a href="">Test 1</a></li>
-								<li><a href="">Test 2</a></li>
-								<li><a href="">Test 3</a></li>
+								<li><a href="about" class="redirect-link">About</a></li>
+								<li><a href="test" class="redirect-link">Test 1</a></li>
+								<li><a class="redirect-link">Test 2</a></li>
+								<li><a class="redirect-link">Test 3</a></li>
 								<br>
-								<li><a href="">Contact</a></li>
+								<li><a>Contact</a></li>
 							</ul>
 						</div>
 					</div> <!-- sidebar -->
 
-	        <div class="col-xs-12 col-sm-8 col-md-8" id="display-section">
-	          <div>
-	            <h2 id="display-title">About</h2>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam ligula, aliquam fringilla egestas ut, rutrum ut mi. Suspendisse quis nunc luctus, euismod eros id, rutrum est. Fusce egestas congue orci, nec cursus turpis euismod nec. Mauris lacinia ultrices elit in hendrerit. Praesent eleifend leo sit amet lectus laoreet, vitae faucibus odio euismod. Nulla diam erat, rutrum aliquet posuere eu, finibus nec magna. Cras eget lectus pharetra, sodales sem in, aliquam risus. Nunc euismod quis ante ac dictum. Maecenas commodo, nulla consectetur sodales auctor, turpis lacus consequat nibh, ut pellentesque tellus nunc sed ante.
-
-Mauris dolor tortor, molestie sed elit vel, scelerisque blandit sapien. Etiam consectetur, massa in vehicula dignissim, sapien felis posuere quam, id feugiat risus nunc vehicula dui. Integer dignissim, est sed hendrerit placerat, urna lectus mollis leo, posuere lobortis nunc nisi lacinia turpis. Pellentesque aliquam dictum laoreet. Fusce vehicula venenatis justo, eu egestas arcu tincidunt sollicitudin. Integer metus nisi, convallis in massa eu, aliquet ultricies magna. Nulla facilisi.
-
-Mauris velit nisi, fermentum ac lacus a, volutpat venenatis ante. Phasellus bibendum hendrerit purus. Vivamus tortor justo, condimentum in mattis non, fermentum ac lectus. Praesent quis ante et nulla blandit volutpat nec ornare tortor. Quisque odio erat, consequat vitae imperdiet nec, bibendum a ipsum. Ut facilisis est quis mi ornare faucibus. Maecenas pulvinar tortor enim, at consequat nulla blandit ut. Maecenas eleifend gravida nisl vel rhoncus. Aenean pellentesque viverra ante.
-
-Integer eget pharetra nisl, eu tempor mauris. Vivamus sagittis augue vel nisi fringilla accumsan. Etiam sed elit in turpis porta facilisis. Ut scelerisque justo non vulputate tempus. Suspendisse viverra orci ac purus rhoncus accumsan. Aenean commodo mollis ex, quis tempor sem aliquet in. Aenean tristique justo sit amet suscipit blandit. Donec blandit felis massa, eu placerat felis pretium ac. Sed at felis quis urna sagittis maximus. Vivamus ultrices mi at est rutrum, ut elementum sapien malesuada.
-
-Nam non mauris commodo, rutrum arcu in, iaculis nunc. Suspendisse cursus aliquet massa. Aliquam a bibendum metus. Etiam ultricies turpis sagittis justo scelerisque, eu varius dolor varius. Praesent ut nunc commodo, ultrices nisi eget, pretium nunc. Sed vel commodo elit, vitae pellentesque mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sed mauris odio. Donec at lacinia lectus. Proin porta tortor a tincidunt auctor.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam ligula, aliquam fringilla egestas ut, rutrum ut mi. Suspendisse quis nunc luctus, euismod eros id, rutrum est. Fusce egestas congue orci, nec cursus turpis euismod nec. Mauris lacinia ultrices elit in hendrerit. Praesent eleifend leo sit amet lectus laoreet, vitae faucibus odio euismod. Nulla diam erat, rutrum aliquet posuere eu, finibus nec magna. Cras eget lectus pharetra, sodales sem in, aliquam risus. Nunc euismod quis ante ac dictum. Maecenas commodo, nulla consectetur sodales auctor, turpis lacus consequat nibh, ut pellentesque tellus nunc sed ante.
-
-Mauris dolor tortor, molestie sed elit vel, scelerisque blandit sapien. Etiam consectetur, massa in vehicula dignissim, sapien felis posuere quam, id feugiat risus nunc vehicula dui. Integer dignissim, est sed hendrerit placerat, urna lectus mollis leo, posuere lobortis nunc nisi lacinia turpis. Pellentesque aliquam dictum laoreet. Fusce vehicula venenatis justo, eu egestas arcu tincidunt sollicitudin. Integer metus nisi, convallis in massa eu, aliquet ultricies magna. Nulla facilisi.
-
-Mauris velit nisi, fermentum ac lacus a, volutpat venenatis ante. Phasellus bibendum hendrerit purus. Vivamus tortor justo, condimentum in mattis non, fermentum ac lectus. Praesent quis ante et nulla blandit volutpat nec ornare tortor. Quisque odio erat, consequat vitae imperdiet nec, bibendum a ipsum. Ut facilisis est quis mi ornare faucibus. Maecenas pulvinar tortor enim, at consequat nulla blandit ut. Maecenas eleifend gravida nisl vel rhoncus. Aenean pellentesque viverra ante.
-
-Integer eget pharetra nisl, eu tempor mauris. Vivamus sagittis augue vel nisi fringilla accumsan. Etiam sed elit in turpis porta facilisis. Ut scelerisque justo non vulputate tempus. Suspendisse viverra orci ac purus rhoncus accumsan. Aenean commodo mollis ex, quis tempor sem aliquet in. Aenean tristique justo sit amet suscipit blandit. Donec blandit felis massa, eu placerat felis pretium ac. Sed at felis quis urna sagittis maximus. Vivamus ultrices mi at est rutrum, ut elementum sapien malesuada.
-
-Nam non mauris commodo, rutrum arcu in, iaculis nunc. Suspendisse cursus aliquet massa. Aliquam a bibendum metus. Etiam ultricies turpis sagittis justo scelerisque, eu varius dolor varius. Praesent ut nunc commodo, ultrices nisi eget, pretium nunc. Sed vel commodo elit, vitae pellentesque mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sed mauris odio. Donec at lacinia lectus. Proin porta tortor a tincidunt auctor.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quam ligula, aliquam fringilla egestas ut, rutrum ut mi. Suspendisse quis nunc luctus, euismod eros id, rutrum est. Fusce egestas congue orci, nec cursus turpis euismod nec. Mauris lacinia ultrices elit in hendrerit. Praesent eleifend leo sit amet lectus laoreet, vitae faucibus odio euismod. Nulla diam erat, rutrum aliquet posuere eu, finibus nec magna. Cras eget lectus pharetra, sodales sem in, aliquam risus. Nunc euismod quis ante ac dictum. Maecenas commodo, nulla consectetur sodales auctor, turpis lacus consequat nibh, ut pellentesque tellus nunc sed ante.
-
-Mauris dolor tortor, molestie sed elit vel, scelerisque blandit sapien. Etiam consectetur, massa in vehicula dignissim, sapien felis posuere quam, id feugiat risus nunc vehicula dui. Integer dignissim, est sed hendrerit placerat, urna lectus mollis leo, posuere lobortis nunc nisi lacinia turpis. Pellentesque aliquam dictum laoreet. Fusce vehicula venenatis justo, eu egestas arcu tincidunt sollicitudin. Integer metus nisi, convallis in massa eu, aliquet ultricies magna. Nulla facilisi.
-
-Mauris velit nisi, fermentum ac lacus a, volutpat venenatis ante. Phasellus bibendum hendrerit purus. Vivamus tortor justo, condimentum in mattis non, fermentum ac lectus. Praesent quis ante et nulla blandit volutpat nec ornare tortor. Quisque odio erat, consequat vitae imperdiet nec, bibendum a ipsum. Ut facilisis est quis mi ornare faucibus. Maecenas pulvinar tortor enim, at consequat nulla blandit ut. Maecenas eleifend gravida nisl vel rhoncus. Aenean pellentesque viverra ante.
-
-Integer eget pharetra nisl, eu tempor mauris. Vivamus sagittis augue vel nisi fringilla accumsan. Etiam sed elit in turpis porta facilisis. Ut scelerisque justo non vulputate tempus. Suspendisse viverra orci ac purus rhoncus accumsan. Aenean commodo mollis ex, quis tempor sem aliquet in. Aenean tristique justo sit amet suscipit blandit. Donec blandit felis massa, eu placerat felis pretium ac. Sed at felis quis urna sagittis maximus. Vivamus ultrices mi at est rutrum, ut elementum sapien malesuada.
-
-Nam non mauris commodo, rutrum arcu in, iaculis nunc. Suspendisse cursus aliquet massa. Aliquam a bibendum metus. Etiam ultricies turpis sagittis justo scelerisque, eu varius dolor varius. Praesent ut nunc commodo, ultrices nisi eget, pretium nunc. Sed vel commodo elit, vitae pellentesque mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sed mauris odio. Donec at lacinia lectus. Proin porta tortor a tincidunt auctor.</p>
-
-						</div>
-					</div> <!-- main display block -->
+	        <div class="col-xs-12 col-sm-8 col-md-8">
+	          <div id="display-section"></div> <!-- main display block -->
+					</div>
 
 			</div>
 		</div> <!-- container -->
 	</body>
-	<script src="js/jquery-3.2.1.js"></script>
-	<script src="js/test.js"></script>
 </html>
