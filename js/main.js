@@ -1,22 +1,30 @@
-var app = angular.module("index", ["ngRoute"]);
+var app = angular.module('index', ['ui.router', 'ngAnimate']);
 
-app.config(function($routeProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
-	$routeProvider
-	.when("/", {
-		templateUrl: "/view/home.html"
-	})
-	.when("/about", {
-		templateUrl: "/view/about.html"
-	})
-  .when("/test", {
-		templateUrl: "/view/test.html"
-	})
-	.otherwise({redirectTo:'/'});
+app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+  $locationProvider.hashPrefix('');
+  var rootState = {
+    name: 'home',
+    url: '/',
+    templateUrl: '/view/home.html'
+  };
+  var aboutState = {
+    name: 'about',
+    url: '/about',
+    templateUrl: '/view/about.html'
+  };
+  var testState = {
+    name: 'test',
+    url: '/test',
+    templateUrl: '/view/test.html'
+  };
+	$stateProvider.state(rootState)
+                .state(aboutState)
+                .state(testState);
+  $urlRouterProvider.otherwise('/');
 });
 
-app.controller("sidebar-controller", function($scope, $location) {
-  $scope.redirect = function(path) {
-    $location.url("/" + path + "/")
-  }
-});
+// app.controller("sidebar-controller", function($scope, $location) {
+//   $scope.redirect = function(path) {
+//     $location.url("/" + path + "/")
+//   }
+// });
