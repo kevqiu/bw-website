@@ -3,19 +3,20 @@
 <html>
 	<head>
 		<title>Sample Webiste</title>
+		<base href="/"></base>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="js/jquery-3.2.1.js"></script>
-		<script src="js/navigo.min.js"></script>
 		<script src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/sidebar.css">
 	</head>
 
-	<body>
+	<body ng-app="index">
 		<nav class="navbar navbar-inverse navbar-fixed-top visible-xs-block">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
@@ -34,14 +35,14 @@
 			<div id="container">
 				<div class="row">
 					<div class="hidden-xs col-sm-3 col-md-2 col-md-offset-1">
-		        <div class="sidebar-module sidebar-module-inset sidebar-fixed">
-							<h2 href="/" class="sidebar-title redirect-link" id="sidebar-first">First</h2>
-							<h2 href="/" class="sidebar-title redirect-link" id="sidebar-last">LAST</h2>
+		        <div class="sidebar-module sidebar-module-inset sidebar-fixed" ng-controller="sidebar-controller">
+							<h2 class="sidebar-title" id="sidebar-first" ng-click="redirect('/')">First</h2>
+							<h2 class="sidebar-title" id="sidebar-last" ng-click="redirect('/')">LAST</h2>
 							<ul id="sidebar-list">
-								<li><a href="about" class="redirect-link">About</a></li>
-								<li><a href="test" class="redirect-link">Test 1</a></li>
-								<li><a class="redirect-link">Test 2</a></li>
-								<li><a class="redirect-link">Test 3</a></li>
+								<li><a ng-click="redirect('about')">About</a></li>
+								<li><a ng-click="redirect('test')">Test 1</a></li>
+								<li><a ng-click="redirect('test2')">Test 2</a></li>
+								<li><a ng-click="redirect('test3')">Test 3</a></li>
 								<br>
 								<li><a>Contact</a></li>
 							</ul>
@@ -49,7 +50,7 @@
 					</div> <!-- sidebar -->
 
 	        <div class="col-xs-12 col-sm-8 col-md-8">
-	          <div id="display-section"></div> <!-- main display block -->
+	          <div class="ng-view"></div> <!-- main display block -->
 					</div>
 
 			</div>

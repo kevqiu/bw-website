@@ -1,36 +1,22 @@
-/* REPLACE WITH ANGULAR ROUTING BC JQUERY SUCKS LOL */
+var app = angular.module("index", ["ngRoute"]);
 
-var defaultUrl = "/";
-console.log(window.location.pathname);
-$(document).ready(function() {
-
-  loadDisplay(window.location.pathname);
-
-  $(".redirect-link").click(function(e) {
-    e.preventDefault();
-    var url = $(this).attr('href');
-    loadDisplay(url);
-    history.pushState({url: url}, "", url);
-  });
-
-  window.onpopstate = function(e) {
-    var url = e.state ? e.state.url : defaultUrl;
-    loadDisplay(url);
-  }
+app.config(function($routeProvider, $locationProvider) {
+  $locationProvider.html5Mode(true);
+	$routeProvider
+	.when("/", {
+		templateUrl: "/view/home.html"
+	})
+	.when("/about", {
+		templateUrl: "/view/about.html"
+	})
+  .when("/test", {
+		templateUrl: "/view/test.html"
+	})
+	.otherwise({redirectTo:'/'});
 });
 
-function loadDisplay(url) {
-  if (url == "/") {
-    url = "home";
+app.controller("sidebar-controller", function($scope, $location) {
+  $scope.redirect = function(path) {
+    $location.url("/" + path + "/")
   }
-  var route = "view/" + url + ".html";
-  $.ajax({
-    url: route,
-    success: function(response) {
-      $("#display-section").html(response);
-    },
-    error: function() {
-      $("#display-section").html("<p>404!?!?!?</p>")
-    }
-  });
-}
+});
