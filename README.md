@@ -1,8 +1,7 @@
 # Clean Black & White personal website
 
 ## Running website:
-Requirements
-- NodeJS
+Requirements - Node.js
 
 1. `npm install`
 2. `nodemon server.js`
