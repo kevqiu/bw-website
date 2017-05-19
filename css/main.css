@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-#display-title {
+.display-title {
   margin-bottom: 25px;
   font-weight: 600;
   letter-spacing: -0.05em;

@@ -37,3 +37,9 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+#credit {
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}

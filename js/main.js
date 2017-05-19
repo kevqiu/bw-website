@@ -5,21 +5,33 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
   var rootState = {
     name: 'home',
     url: '/',
-    templateUrl: '/view/home.html'
+    templateUrl: '/html/home.html'
   };
   var aboutState = {
     name: 'about',
     url: '/about',
-    templateUrl: '/view/about.html'
+    templateUrl: '/html/about.html'
   };
-  var testState = {
-    name: 'test',
-    url: '/test',
-    templateUrl: '/view/test.html'
+  var portfolioState = {
+    name: 'portfolio',
+    url: '/portfolio',
+    templateUrl: '/html/portfolio.html'
+  };
+  var resumeState = {
+    name: 'resume',
+    url: '/resume',
+    templateUrl: '/html/resume.html'
+  };
+  var contactState = {
+    name: 'contact',
+    url: '/contact',
+    templateUrl: '/html/contact.html'
   };
 	$stateProvider.state(rootState)
                 .state(aboutState)
-                .state(testState);
+                .state(portfolioState)
+                .state(resumeState)
+                .state(contactState);
   $urlRouterProvider.otherwise('/');
 });
 
