@@ -1,0 +1,22 @@
+{
+  "name": "test-website",
+  "version": "1.0.0",
+  "description": "Frameworks used:\r - Bootstrap\r - AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevqiu/samplewebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevqiu/samplewebsite/issues"
+  },
+  "homepage": "https://github.com/kevqiu/samplewebsite#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
