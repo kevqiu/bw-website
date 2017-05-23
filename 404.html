@@ -1,59 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <html>
-    <head>
-      <title>Sample Webiste</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-animate.js"></script>
-      <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
-      <link rel="stylesheet" type="text/css" href="css/main.css">
-      <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-      <link rel="stylesheet" type="text/css" href="css/test.css">
-      <link rel="stylesheet" type="text/css" href="css/ui-view-animatitons.css">
-    </head>
-    <body ng-app="index">
-      <nav class="navbar navbar-inverse navbar-fixed-top visible-xs-block">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">WebSiteName</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <!-- <li class="active"><a href="#">Home</a></li> -->
-            <!-- <li><a href="#">Page 1</a></li>
-              <li><a href="#">Page 2</a></li>
-              <li><a href="#">Page 3</a></li> -->
-          </ul>
-        </div> <!-- container -->
-      </nav>
-      <div id="main-container">
-      <div id="container">
-        <div class="row">
-          <div class="hidden-xs col-sm-3 col-md-2 col-md-offset-1">
-            <div class="sidebar-module sidebar-module-inset sidebar-fixed">
-              <h2 class="sidebar-title" id="sidebar-first" ui-sref="home">First</h2>
-              <h2 class="sidebar-title" id="sidebar-last" ui-sref="home">Last</h2>
-              <ul id="sidebar-list">
-                <li><a ui-sref="about">About</a></li>
-                <li><a ui-sref="portfolio">Portfolio</a></li>
-                <li><a ui-sref="resume">Resume</a></li>
-                <br>
-                <li><a ui-sref="contact">Contact</a></li>
-                <br>
-                <p class="text-muted" id="credit">&#169; 2017 Kevin Qiu</p>
-              </ul> <!-- sidebar list -->
-            </div> <!-- sidebar -->
-          </div> <!-- sidebar column -->
-
-          <div class="col-xs-12 col-sm-8 col-md-7">
-            <div ui-view></div> <!-- main display block -->
-          </div> <!-- display column -->
-        </div> <!-- row -->
-      </div> <!-- container -->
-    </body>
-  </html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set segmentCount to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
+      // Otherwise, leave segmentCount as 0.
+      var segmentCount = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
