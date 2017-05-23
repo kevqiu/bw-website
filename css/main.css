@@ -1,0 +1,12 @@
+#main-container {
+  padding-top: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.display-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
