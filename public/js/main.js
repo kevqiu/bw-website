@@ -1,7 +1,7 @@
 var app = angular.module('index', ['ui.router', 'ngAnimate']);
 
 app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.hashPrefix('');
+  $locationProvider.html5Mode(true);
   var rootState = {
     name: 'home',
     url: '/',
