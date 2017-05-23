@@ -18,5 +18,8 @@
   "homepage": "https://github.com/kevqiu/samplewebsite#readme",
   "dependencies": {
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0"
   }
 }
