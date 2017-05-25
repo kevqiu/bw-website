@@ -19,9 +19,9 @@ app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
     templateUrl: 'view/portfolio.html'
   };
   var resumeState = {
-    name: 'resume',
-    url: '/resume',
-    templateUrl: 'view/resume.html'
+    name: 'testpage',
+    url: '/testpage',
+    templateUrl: 'view/testpage.html'
   };
   var contactState = {
     name: 'contact',
