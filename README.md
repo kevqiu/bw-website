@@ -1,6 +1,8 @@
 # Clean Black & White personal website
 
-## Running website:
+View at www.kevinqiu.com/bw-website
+
+## Instructions to set up website locally
 Requirements - Node.js
 
 1. `npm install`
@@ -10,4 +12,4 @@ Requirements - Node.js
 ## Frameworks used:
 - Bootstrap
 - AngularJS
-- Node.js, npm
+- Node.js
