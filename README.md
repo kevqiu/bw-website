@@ -1,6 +1,6 @@
 # Clean Black & White personal website
 
-View at www.kevinqiu.com/bw-website
+View at www.kevinqiu.me/bw-website
 
 ## Instructions to set up website locally
 Requirements - Node.js
